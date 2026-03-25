@@ -1,26 +1,34 @@
 import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
+import projectChatbot from "@/assets/project-chatbot.jpg";
+import projectCybersecurity from "@/assets/project-cybersecurity.jpg";
+import projectWater from "@/assets/project-water.jpg";
+import projectMedical from "@/assets/project-medical.jpg";
 
 const projects = [
   {
     title: "AI RAG Chatbot with Chat History",
     desc: "Developed an intelligent chatbot that answers questions from PDFs using Retrieval-Augmented Generation (RAG). Implemented server-side chat history with unique user IDs and a WhatsApp-style UI.",
     tech: ["Python", "Flask", "NLP", "Generative AI", "HTML", "CSS", "JavaScript"],
+    image: projectChatbot,
   },
   {
     title: "Centralized Vulnerability Detection & Intelligent Query Interface",
     desc: "A machine learning-based cybersecurity platform to detect vulnerabilities and centralize security issues. Provides AI assistance to help users understand and resolve issues efficiently.",
     tech: ["Python", "Machine Learning", "Cybersecurity", "SQL"],
+    image: projectCybersecurity,
   },
   {
     title: "Daily Water Intake Predictor",
     desc: "Designed a system to recommend daily water intake using machine learning. Includes a user-friendly interface for input and personalized predictions.",
     tech: ["Python", "Machine Learning"],
+    image: projectWater,
   },
   {
     title: "Medical Store Management System",
     desc: "Built a desktop application for managing customer registration, login, and medicine purchases. Integrated discount calculation and wallet rewards with database connectivity.",
     tech: ["Java", "AWT", "MySQL", "JDBC"],
+    image: projectMedical,
   },
 ];
 
@@ -51,9 +59,19 @@ const ProjectCard = ({ project }: { project: typeof projects[0] }) => {
       onMouseLeave={handleMouseLeave}
       className="glass-card-hover rounded-2xl overflow-hidden section-reveal tilt-card"
     >
-      {/* Image placeholder */}
-      <div className="h-44 gradient-accent opacity-30 flex items-center justify-center">
-        <span className="text-4xl opacity-50">🚀</span>
+      <div className="relative h-48 overflow-hidden group">
+        <img
+          src={project.image}
+          alt={project.title}
+          loading="lazy"
+          width={800}
+          height={512}
+          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+        />
+        <div
+          className="absolute inset-0 pointer-events-none"
+          style={{ background: 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)' }}
+        />
       </div>
       <div className="p-6">
         <h3 className="font-display text-xl font-semibold text-foreground mb-2">{project.title}</h3>
