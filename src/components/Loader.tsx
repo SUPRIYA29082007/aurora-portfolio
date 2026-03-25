@@ -1,27 +1,29 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+
+const messages = [
+  "> Initializing Portfolio...",
+  "> Loading Modules...",
+  "> Compiling Assets...",
+  "> Welcome, Recruiter 🚀",
+];
 
 const Loader = ({ onComplete }: { onComplete: () => void }) => {
   const [lines, setLines] = useState<string[]>([]);
-  const messages = [
-    "> Initializing Portfolio...",
-    "> Loading Modules...",
-    "> Compiling Assets...",
-    "> Welcome, Recruiter 🚀",
-  ];
+  const indexRef = useRef(0);
 
   useEffect(() => {
-    let i = 0;
     const interval = setInterval(() => {
+      const i = indexRef.current;
       if (i < messages.length) {
         setLines((prev) => [...prev, messages[i]]);
-        i++;
+        indexRef.current = i + 1;
       } else {
         clearInterval(interval);
         setTimeout(onComplete, 600);
       }
     }, 500);
     return () => clearInterval(interval);
-  }, []);
+  }, [onComplete]);
 
   return (
     <div className="fixed inset-0 z-[99999] flex items-center justify-center bg-background">
