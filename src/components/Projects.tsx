@@ -3,24 +3,24 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Movie Ticket Booking System",
-    desc: "A comprehensive desktop application for booking movie tickets with seat selection and payment flow.",
-    tech: ["Java", "Swing", "JDBC"],
+    title: "AI RAG Chatbot with Chat History",
+    desc: "Developed an intelligent chatbot that answers questions from PDFs using Retrieval-Augmented Generation (RAG). Implemented server-side chat history with unique user IDs and a WhatsApp-style UI.",
+    tech: ["Python", "Flask", "NLP", "Generative AI", "HTML", "CSS", "JavaScript"],
   },
   {
-    title: "Library Management System",
-    desc: "Full-featured library management with book tracking, member management, and reporting.",
-    tech: ["Java", "OOP", "File I/O"],
+    title: "Centralized Vulnerability Detection & Intelligent Query Interface",
+    desc: "A machine learning-based cybersecurity platform to detect vulnerabilities and centralize security issues. Provides AI assistance to help users understand and resolve issues efficiently.",
+    tech: ["Python", "Machine Learning", "Cybersecurity", "SQL"],
   },
   {
-    title: "Beauty Parlour Website",
-    desc: "A modern, responsive website for a beauty salon featuring service listings and appointment info.",
-    tech: ["HTML", "CSS", "JavaScript"],
+    title: "Daily Water Intake Predictor",
+    desc: "Designed a system to recommend daily water intake using machine learning. Includes a user-friendly interface for input and personalized predictions.",
+    tech: ["Python", "Machine Learning"],
   },
   {
-    title: "Travel & Tourism Website",
-    desc: "Interactive travel website showcasing destinations, packages, and booking information.",
-    tech: ["HTML", "CSS", "JavaScript"],
+    title: "Medical Store Management System",
+    desc: "Built a desktop application for managing customer registration, login, and medicine purchases. Integrated discount calculation and wallet rewards with database connectivity.",
+    tech: ["Java", "AWT", "MySQL", "JDBC"],
   },
 ];
 

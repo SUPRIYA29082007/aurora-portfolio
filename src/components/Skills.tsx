@@ -4,12 +4,12 @@ const categories = [
   {
     title: "Programming",
     icon: Code,
-    skills: ["Java", "C", "Python"],
+    skills: ["Java", "Python"],
   },
   {
     title: "Web",
     icon: Globe,
-    skills: ["HTML", "CSS", "JavaScript", "Node.js"],
+    skills: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
   },
   {
     title: "Database",
@@ -19,7 +19,7 @@ const categories = [
   {
     title: "Tools",
     icon: Wrench,
-    skills: ["GitHub", "VS Code"],
+    skills: ["GitHub", "VS Code", "Jupyter Notebook"],
   },
 ];
 

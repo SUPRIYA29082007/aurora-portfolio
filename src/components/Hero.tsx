@@ -41,8 +41,8 @@ const Hero = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center px-4">
       {/* Floating orbs */}
-      <div className="floating-orb w-96 h-96 -top-20 -left-20" style={{ background: 'hsl(221, 83%, 53%)' }} />
-      <div className="floating-orb w-80 h-80 top-1/2 -right-20" style={{ background: 'hsl(263, 70%, 50%)', animationDelay: '-10s' }} />
+      <div className="floating-orb w-96 h-96 -top-20 -left-20" style={{ background: 'hsl(217, 91%, 60%)' }} />
+      <div className="floating-orb w-80 h-80 top-1/2 -right-20" style={{ background: 'hsl(330, 81%, 60%)', animationDelay: '-10s' }} />
 
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         {/* Profile image */}
