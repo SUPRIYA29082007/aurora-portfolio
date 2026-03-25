@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Mail, Github, Linkedin, Send } from "lucide-react";
+import { openExternalInNewTab } from "@/lib/openExternalInNewTab";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -11,6 +12,9 @@ const Contact = () => {
     setForm({ name: "", email: "", message: "" });
     setTimeout(() => setSent(false), 3000);
   };
+
+  const linkedInUrl = "https://www.linkedin.com/in/supriya-pesaraganti/";
+  const githubUrl = "https://github.com/SUPRIYA29082007";
 
   return (
     <section id="contact" className="relative py-24 px-4">
@@ -30,10 +34,22 @@ const Contact = () => {
               <a href="mailto:pesaragantisupriya@gmail.com" className="flex items-center gap-3 text-muted-foreground transition-colors duration-300 hover:text-primary">
                 <Mail size={20} /> pesaragantisupriya@gmail.com
               </a>
-              <a href="https://www.linkedin.com/in/supriya-pesaraganti/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground transition-colors duration-300 hover:text-primary">
+              <a
+                href={linkedInUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={openExternalInNewTab(linkedInUrl)}
+                className="flex items-center gap-3 text-muted-foreground transition-colors duration-300 hover:text-primary"
+              >
                 <Linkedin size={20} /> LinkedIn Profile
               </a>
-              <a href="https://github.com/SUPRIYA29082007" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground transition-colors duration-300 hover:text-primary">
+              <a
+                href={githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={openExternalInNewTab(githubUrl)}
+                className="flex items-center gap-3 text-muted-foreground transition-colors duration-300 hover:text-primary"
+              >
                 <Github size={20} /> GitHub Profile
               </a>
             </div>
