@@ -82,7 +82,6 @@ const Hero = () => {
             href={linkedInUrl}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={openExternalInNewTab(linkedInUrl)}
             className="pill-btn flex items-center gap-2"
           >
             <Linkedin size={16} /> LinkedIn
@@ -91,7 +90,6 @@ const Hero = () => {
             href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={openExternalInNewTab(githubUrl)}
             className="pill-btn flex items-center gap-2"
           >
             <Github size={16} /> GitHub

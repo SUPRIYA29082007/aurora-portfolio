@@ -37,7 +37,6 @@ const Contact = () => {
                 href={linkedInUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={openExternalInNewTab(linkedInUrl)}
                 className="flex items-center gap-3 text-muted-foreground transition-colors duration-300 hover:text-primary"
               >
                 <Linkedin size={20} /> LinkedIn Profile
@@ -46,7 +45,6 @@ const Contact = () => {
                 href={githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={openExternalInNewTab(githubUrl)}
                 className="flex items-center gap-3 text-muted-foreground transition-colors duration-300 hover:text-primary"
               >
                 <Github size={20} /> GitHub Profile
