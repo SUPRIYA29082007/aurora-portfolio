@@ -3,6 +3,7 @@ import Loader from "@/components/Loader";
 import Starfield from "@/components/Starfield";
 import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
+import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
@@ -48,6 +49,7 @@ const Index = () => {
       <ScrollProgress />
 
       <div className="relative z-10">
+        <Navbar />
         <Hero />
         <About />
         <Skills />
