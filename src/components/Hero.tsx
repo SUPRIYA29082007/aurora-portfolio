@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Mail, FileText, ChevronDown } from "lucide-react";
-import { openExternalInNewTab } from "@/lib/openExternalInNewTab";
 
 const useTypingEffect = (texts: string[], speed = 80, pause = 2000) => {
   const [display, setDisplay] = useState("");
