@@ -39,6 +39,9 @@ const Hero = () => {
     "Future Software Engineer",
   ]);
 
+  const linkedInUrl = "https://www.linkedin.com/in/supriya-pesaraganti/";
+  const githubUrl = "https://github.com/SUPRIYA29082007";
+
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center px-4">
       {/* Subtle background glow */}
@@ -76,10 +79,22 @@ const Hero = () => {
           <a href="#projects" className="pill-btn flex items-center gap-2">
             <FileText size={16} /> Projects
           </a>
-          <a href="https://www.linkedin.com/in/supriya-pesaraganti/" target="_blank" rel="noopener noreferrer" className="pill-btn flex items-center gap-2">
+          <a
+            href={linkedInUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={openExternalInNewTab(linkedInUrl)}
+            className="pill-btn flex items-center gap-2"
+          >
             <Linkedin size={16} /> LinkedIn
           </a>
-          <a href="https://github.com/SUPRIYA29082007" target="_blank" rel="noopener noreferrer" className="pill-btn flex items-center gap-2">
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={openExternalInNewTab(githubUrl)}
+            className="pill-btn flex items-center gap-2"
+          >
             <Github size={16} /> GitHub
           </a>
         </div>
