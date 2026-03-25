@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Mail, Github, Linkedin, Send } from "lucide-react";
+import { openExternalInNewTab } from "@/lib/openExternalInNewTab";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
