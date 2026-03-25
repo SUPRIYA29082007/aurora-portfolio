@@ -42,6 +42,7 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen bg-background" style={{ cursor: 'none' }}>
+      <div className="mesh-gradient" />
       <Starfield />
       <CustomCursor />
       <ScrollProgress />
