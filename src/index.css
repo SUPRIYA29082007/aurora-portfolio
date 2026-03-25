@@ -75,8 +75,8 @@
     @apply glass-card transition-all duration-500;
   }
   .glass-card-hover:hover {
-    border-color: hsla(221, 83%, 53%, 0.3);
-    box-shadow: 0 0 30px hsla(221, 83%, 53%, 0.1), 0 0 60px hsla(263, 70%, 50%, 0.05);
+    border-color: hsla(217, 91%, 60%, 0.3);
+    box-shadow: 0 0 30px hsla(217, 91%, 60%, 0.1), 0 0 60px hsla(330, 81%, 60%, 0.05);
     transform: translateY(-4px);
   }
 
@@ -106,7 +106,7 @@
   }
   .pill-btn:hover {
     border-color: hsl(var(--primary));
-    box-shadow: 0 0 20px hsla(221, 83%, 53%, 0.2);
+    box-shadow: 0 0 20px hsla(217, 91%, 60%, 0.2);
     transform: translateY(-2px);
   }
   .pill-btn-primary {
@@ -116,7 +116,7 @@
     color: white;
   }
   .pill-btn-primary:hover {
-    box-shadow: 0 0 30px hsla(221, 83%, 53%, 0.4);
+    box-shadow: 0 0 30px hsla(217, 91%, 60%, 0.4);
     transform: translateY(-2px);
   }
 
@@ -170,7 +170,7 @@
   .cursor-ring {
     width: 40px;
     height: 40px;
-    border: 1.5px solid hsla(221, 83%, 53%, 0.4);
+    border: 1.5px solid hsla(217, 91%, 60%, 0.4);
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
@@ -199,7 +199,7 @@
   }
   .skill-badge:hover {
     border-color: hsl(var(--primary));
-    box-shadow: 0 0 20px hsla(221, 83%, 53%, 0.15);
+    box-shadow: 0 0 20px hsla(217, 91%, 60%, 0.15);
     transform: scale(1.05);
   }
 
@@ -212,7 +212,7 @@
     height: 14px;
     border-radius: 50%;
     background: var(--gradient-primary);
-    box-shadow: 0 0 15px hsla(221, 83%, 53%, 0.4);
+    box-shadow: 0 0 15px hsla(217, 91%, 60%, 0.4);
   }
 }
 
@@ -234,8 +234,8 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px hsla(221, 83%, 53%, 0.2); }
-  50% { box-shadow: 0 0 40px hsla(221, 83%, 53%, 0.4); }
+  0%, 100% { box-shadow: 0 0 20px hsla(217, 91%, 60%, 0.2); }
+  50% { box-shadow: 0 0 40px hsla(217, 91%, 60%, 0.4); }
 }
 
 /* Smooth scrolling */
@@ -248,12 +248,12 @@ html {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(222, 47%, 4%);
+  background: hsl(0, 0%, 3%);
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(221, 83%, 30%);
+  background: hsl(217, 91%, 35%);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(221, 83%, 45%);
+  background: hsl(217, 91%, 50%);
 }
