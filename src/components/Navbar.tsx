@@ -25,7 +25,7 @@ const Navbar = () => {
       className={`fixed top-0 left-0 right-0 z-[9998] transition-all duration-300 ${
         scrolled ? "glass-card shadow-lg" : "bg-transparent"
       }`}
-      style={{ cursor: "none" }}
+      
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-5 py-3">
         <a href="#hero" className="font-display text-xl font-bold gradient-text">
