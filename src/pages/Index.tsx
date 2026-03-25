@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 import Loader from "@/components/Loader";
-import Starfield from "@/components/Starfield";
-import CustomCursor from "@/components/CustomCursor";
 import ScrollProgress from "@/components/ScrollProgress";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -42,10 +40,8 @@ const Index = () => {
   }
 
   return (
-    <div className="relative min-h-screen bg-background" style={{ cursor: 'none' }}>
+    <div className="relative min-h-screen bg-background">
       <div className="mesh-gradient" />
-      <Starfield />
-      <CustomCursor />
       <ScrollProgress />
 
       <div className="relative z-10">
