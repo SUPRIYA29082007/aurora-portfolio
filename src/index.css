@@ -6,34 +6,35 @@
 
 @layer base {
   :root {
-    --background: 222 47% 2%;
+    --background: 0 0% 1%;
     --foreground: 210 40% 92%;
-    --card: 222 47% 6%;
+    --card: 0 0% 5%;
     --card-foreground: 210 40% 92%;
-    --popover: 222 47% 6%;
+    --popover: 0 0% 5%;
     --popover-foreground: 210 40% 92%;
-    --primary: 221 83% 53%;
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 263 70% 50%;
+    --secondary: 263 70% 58%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 222 30% 12%;
+    --muted: 0 0% 10%;
     --muted-foreground: 215 20% 55%;
-    --accent: 263 70% 50%;
+    --accent: 330 81% 60%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 222 30% 16%;
-    --input: 222 30% 16%;
-    --ring: 221 83% 53%;
+    --border: 0 0% 14%;
+    --input: 0 0% 14%;
+    --ring: 217 91% 60%;
     --radius: 0.75rem;
 
-    --gradient-primary: linear-gradient(135deg, hsl(221, 83%, 53%), hsl(263, 70%, 50%));
+    --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(263, 70%, 58%), hsl(330, 81%, 60%));
     --gradient-text: linear-gradient(135deg, hsl(0, 0%, 75%), hsl(0, 0%, 100%), hsl(210, 60%, 80%));
-    --gradient-glow: radial-gradient(circle, hsl(221, 83%, 53%, 0.15), transparent 70%);
-    --glass-bg: hsla(222, 47%, 6%, 0.6);
+    --gradient-glow: radial-gradient(circle, hsl(217, 91%, 60%, 0.15), transparent 70%);
+    --glass-bg: hsla(0, 0%, 5%, 0.6);
     --glass-border: hsla(0, 0%, 100%, 0.08);
-    --neon-blue: 221 83% 53%;
-    --neon-violet: 263 70% 50%;
+    --neon-blue: 217 91% 60%;
+    --neon-violet: 263 70% 58%;
+    --neon-pink: 330 81% 60%;
   }
 }
 
@@ -74,8 +75,8 @@
     @apply glass-card transition-all duration-500;
   }
   .glass-card-hover:hover {
-    border-color: hsla(221, 83%, 53%, 0.3);
-    box-shadow: 0 0 30px hsla(221, 83%, 53%, 0.1), 0 0 60px hsla(263, 70%, 50%, 0.05);
+    border-color: hsla(217, 91%, 60%, 0.3);
+    box-shadow: 0 0 30px hsla(217, 91%, 60%, 0.1), 0 0 60px hsla(330, 81%, 60%, 0.05);
     transform: translateY(-4px);
   }
 
@@ -105,7 +106,7 @@
   }
   .pill-btn:hover {
     border-color: hsl(var(--primary));
-    box-shadow: 0 0 20px hsla(221, 83%, 53%, 0.2);
+    box-shadow: 0 0 20px hsla(217, 91%, 60%, 0.2);
     transform: translateY(-2px);
   }
   .pill-btn-primary {
@@ -115,7 +116,7 @@
     color: white;
   }
   .pill-btn-primary:hover {
-    box-shadow: 0 0 30px hsla(221, 83%, 53%, 0.4);
+    box-shadow: 0 0 30px hsla(217, 91%, 60%, 0.4);
     transform: translateY(-2px);
   }
 
@@ -169,7 +170,7 @@
   .cursor-ring {
     width: 40px;
     height: 40px;
-    border: 1.5px solid hsla(221, 83%, 53%, 0.4);
+    border: 1.5px solid hsla(217, 91%, 60%, 0.4);
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
@@ -198,7 +199,7 @@
   }
   .skill-badge:hover {
     border-color: hsl(var(--primary));
-    box-shadow: 0 0 20px hsla(221, 83%, 53%, 0.15);
+    box-shadow: 0 0 20px hsla(217, 91%, 60%, 0.15);
     transform: scale(1.05);
   }
 
@@ -211,7 +212,7 @@
     height: 14px;
     border-radius: 50%;
     background: var(--gradient-primary);
-    box-shadow: 0 0 15px hsla(221, 83%, 53%, 0.4);
+    box-shadow: 0 0 15px hsla(217, 91%, 60%, 0.4);
   }
 }
 
@@ -233,8 +234,8 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px hsla(221, 83%, 53%, 0.2); }
-  50% { box-shadow: 0 0 40px hsla(221, 83%, 53%, 0.4); }
+  0%, 100% { box-shadow: 0 0 20px hsla(217, 91%, 60%, 0.2); }
+  50% { box-shadow: 0 0 40px hsla(217, 91%, 60%, 0.4); }
 }
 
 /* Smooth scrolling */
@@ -247,12 +248,12 @@ html {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(222, 47%, 4%);
+  background: hsl(0, 0%, 3%);
 }
 ::-webkit-scrollbar-thumb {
-  background: hsl(221, 83%, 30%);
+  background: hsl(217, 91%, 35%);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(221, 83%, 45%);
+  background: hsl(217, 91%, 50%);
 }

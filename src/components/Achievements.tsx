@@ -13,7 +13,7 @@ const Achievements = () => (
           </div>
           <div>
             <h3 className="font-display text-lg font-semibold text-foreground mb-1">Oracle GenAI Certification</h3>
-            <p className="text-muted-foreground text-sm">Completed Oracle's Generative AI Professional certification, demonstrating expertise in modern AI technologies.</p>
+            <p className="text-muted-foreground text-sm">Completed Oracle's Generative AI Professional certification, demonstrating expertise in modern AI technologies and RAG systems.</p>
           </div>
         </div>
         <div className="bento-card section-reveal flex items-start gap-4">
@@ -22,7 +22,7 @@ const Achievements = () => (
           </div>
           <div>
             <h3 className="font-display text-lg font-semibold text-foreground mb-1">Active Learner</h3>
-            <p className="text-muted-foreground text-sm">Continuously expanding skills in Python, Web Development, and cloud technologies through hands-on projects.</p>
+            <p className="text-muted-foreground text-sm">Continuously expanding skills in AI, Python, and Web Development through hands-on projects and certifications.</p>
           </div>
         </div>
       </div>
