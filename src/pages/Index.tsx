@@ -49,6 +49,7 @@ const Index = () => {
       <ScrollProgress />
 
       <div className="relative z-10">
+        <Navbar />
         <Hero />
         <About />
         <Skills />
